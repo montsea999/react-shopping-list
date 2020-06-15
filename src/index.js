@@ -39,7 +39,7 @@ const Title = (props) => (
       return (   
         <div>     
           <p><b> { this.props.name } </b>&nbsp; { this.props.description } </p>                                                
-           <p><b> quantity: <b></b>{ this.state.quantity } &nbsp; &nbsp;&nbsp; &nbsp;
+           <p> quantity: <b>{ this.state.quantity } &nbsp; &nbsp;&nbsp; &nbsp;
            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           <button onClick={ this.add }> + </button>
           <button onClick={ this.remove }> - </button>
