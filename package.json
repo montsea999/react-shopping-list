@@ -1,5 +1,6 @@
 {
-  "name": "react-fundamentos",
+  "homepage": "https://montsea.github.io/repository-react-shopping-list",
+  "name": "react-shopping-list",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

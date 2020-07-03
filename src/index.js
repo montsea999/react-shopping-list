@@ -7,7 +7,7 @@ const Title = (props) => (
   <hr/><hr/>
   </div>
   )
-  class Product extends React.Component {
+class Product extends React.Component {
     constructor() {    
       super()
 
@@ -36,17 +36,25 @@ const Title = (props) => (
       })
     }
     render() {  
+      const hasQuantity = this.state.quantity > 0;
+      const styles = { 
+        border: '1px solid black', 
+        marginBottom: '1em', 
+        borderRadius: '0.5em', 
+        padding: '1em',
+        background: hasQuantity ? 'linear-gradient(45deg, green, black)': '#FFF',
+        color: hasQuantity ?'#FFF' : '#000',
+        transition: 'all 250ms ease-out'
+ }   
       return (   
-        <div>     
+        <div style={styles}>  
           <p><b> { this.props.name } </b>&nbsp; { this.props.description } </p>                                                
            <p> quantity: <b>{ this.state.quantity } &nbsp; &nbsp;&nbsp; &nbsp;
            &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
           <button onClick={ this.add }> + </button>
           <button onClick={ this.remove }> - </button>
           <button onClick={ this.reset }> reset </button>
-          </b></p>
-        
-          
+          </b></p>   
           <hr/>
         </div>
        ) 
