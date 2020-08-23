@@ -55,7 +55,7 @@ class Product extends React.Component {
           <button onClick={ this.remove }> - </button>
           <button onClick={ this.reset }> reset </button>
           </b></p>   
-          <hr/>
+         
         </div>
        ) 
     }
